@@ -1,0 +1,14 @@
+/* src/FairyTaleStory.css */
+
+.fairytale-story {
+  max-width: 800px; /* Максимальная ширина для текста сказки */
+  margin: 20px;
+  padding: 20px;
+  background-color: white; /* Белый фон для текста */
+  border-radius: 10px; /* Закругленные углы */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+}
+
+.fairytale-story h1 {
+  text-align: center; /* Центрирование заголовка */
+}
