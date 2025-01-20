@@ -1,0 +1,41 @@
+.card {
+    background-color: #272727; /* Темный фон карточки */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out; /* Анимация при наведении */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Увеличение размера при наведении */
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.read-more-btn {
+    background-color: #03a9f4; /* Цвет кнопки */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Анимация при наведении */
+}
+
+.read-more-btn:hover {
+    background-color: #0277bd; /* Изменение цвета кнопки при наведении */
+}

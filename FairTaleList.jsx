@@ -1,6 +1,5 @@
 // FairTaleList.js
 import React from "react";
-import FairTale1 from "./FairTale1";
 import FairTaleCard from "./FairTaleCard";
 import "./FairTaleList.css";
 
@@ -16,23 +15,27 @@ const FairTaleList = () => {
     },
     {
       id: 2,
-      name: "жеж",
-      description: "Очень интересная сказка", // Исправлено
-      price: "достаточно",
+      name: "Линялый фосфор",
+      description: "История рассказывает о мальчике по имени Линай", // Исправлено
+      price: "300$",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAewv0I8x_wWzz1v4MRkPqW9bvb7w4GmGDxA&s", // Исправлено
+        "https://i1.sndcdn.com/artworks-d3x2QXKOpM5j1RWo-FEKoaQ-t500x500.jpg", // Исправлено
       link: "/FairTale2",
     },
     {
       id: 3,
-      name: "жеж",
+      name: "Прокашивать монументальный",
       description: "Очень интересная сказка", // Исправлено
       price: "немало",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAewv0I8x_wWzz1v4MRkPqW9bvb7w4GmGDxA&s", // Исправлено
+        "https://ksmrecords.ru/upload/iblock/1cc/bg66zlfuepnzhyloejo3i2n09caurno0.jpg", // Исправлено
       link: "/FairTale3",
     },
+
   ];
+
+
+
 
   return (
     <div className="fair-tale-list">

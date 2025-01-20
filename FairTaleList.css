@@ -1,51 +1,119 @@
-.fairytale-image { 
-  width: 200px; 
-  height: 100px; 
+/* Глобальная настройка размеров */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+/* Контейнер для основного содержимого */
+.container {
+  min-height: 100vh; /* Минимальная высота - 100% высоты экрана минус высота футера */
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+/* Ограничение минимальной ширины для всего сайта */
+body {
+  min-width: 320px; /* Минимальная ширина сайта */
+}
+
+/* Настройка адаптивности для различных разрешений экрана */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 800px; /* Максимальная ширина для планшетов и больших экранов */
+    margin: 0 auto;
+  }
+}
+
+/* Стили для футера */
+footer {
+  height: 28vh; /* Высота футера */
+  background-color: #3c3c3c;
+  text-align: center;
+
+ padding:20px;
+;
+}
+
+/* Адаптация футера для разных экранов */
+@media screen and (max-width: 767px) {
+  footer {
+    height: 120px; /* Увеличенная высота для мобильных устройств */
+  }
+}
+
+/* Остальные стили остаются без изменений */
 .fair-tale-list {
-  background:linear-gradient(200deg,rgba(0, 0, 0, 0.411),rgba(199, 199, 199, 0.329)); 
-  background-size:500% 500%;
-  -webkit-animation:ServiceAnimation 8s ease infinite;
-  -moz-animation:ServiceAnimation 8s ease infinite;
-  -o-animation:ServiceAnimation 8s ease infinite;
-  animation:ServiceAnimation 8s ease infinite; /* Время смены цвета */
-  height: 900px;
-  width: flex;
-border-radius: 9px
+  background: linear-gradient(200deg, rgba(0, 0, 0, 0.411), rgba(199, 199, 199, 0.329));
+  background-size: 500% 500%;
+  animation: ServiceAnimation 8s ease infinite;
+  border-radius: 9px;
 }
-@-webkit-keyframes ServiceAnimation{0%
-  {background-position:90% 0}50%
-  {background-position:10% 100%}100%
-  {background-position:90% 0}
+
+@-webkit-keyframes ServiceAnimation {
+  0% {
+    background-position: 90% 0;
+  }
+  50% {
+    background-position: 10% 100%;
+  }
+  100% {
+    background-position: 90% 0;
+  }
 }
-@-moz-keyframes ServiceAnimation{0%
-  {background-position:90% 0}50%
-  {background-position:10% 100%}100%
-  {background-position:90% 0}
+
+@-moz-keyframes ServiceAnimation {
+  0% {
+    background-position: 90% 0;
+  }
+  50% {
+    background-position: 10% 100%;
+  }
+  100% {
+    background-position: 90% 0;
+  }
 }
-@-o-keyframes ServiceAnimation{0%
-  {background-position:90% 0}50%
-  {background-position:10% 100%}100%
-  {background-position:90% 0}
+
+@-o-keyframes ServiceAnimation {
+  0% {
+    background-position: 90% 0;
+  }
+  50% {
+    background-position: 10% 100%;
+  }
+  100% {
+    background-position: 90% 0;
+  }
 }
-@keyframes ServiceAnimation{0%
-  {background-position:90% 0}50%
-  {background-position:10% 100%}100%
-  {background-position:90% 0}
+
+@keyframes ServiceAnimation {
+  0% {
+    background-position: 90% 0;
+  }
+  50% {
+    background-position: 10% 100%;
+  }
+  100% {
+    background-position: 90% 0;
+  }
 }
-/* FairTaleCard.css */
+
 .fairy-tale-card {
-  border: 1px solid #ccc;
+  border: 1px solid #383535;
   border-radius: 8px;
   padding: 16px;
   margin: 10px;
   text-align: center;
-  background-color: #0000; /* Цвет фона для карточки */
+  background-color: #000000;
 }
 
 .fairy-tale-image {
-  width: 150px; /* Установите нужную ширину */
-  height: 200px; /* Установите нужную высоту */
-  object-fit: cover; /* Сохранить пропорции изображения */
-  border-radius: 4px; /* Закруглите углы изображения при желании */
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.fairytale-card a {
+  text-decoration: none;
 }
