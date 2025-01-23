@@ -1,19 +1,54 @@
 /* App.css */
 
-main {
-  margin: 0;
-  font-family: 'Arial', sans-serif; /* Установите шрифт для всего приложения */
-   /* Занять всю высоту окна */
-  display: center;
-  justify-content: center; /* Центрировать содержимое по горизонтали */
-  background: linear-gradient(to bottom right, #a8c0ff, #3f2b96); /* Градиент фона */
-  color: #333; /* Цвет текста */
-  align-items: center;
-  width: flex; /* Задайте ширину основного элемента */
-  height: flex;
- align-items: center;
-  background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для контента */
-  border-radius: 10px; /* Закругление углов */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень для основного элемента */
-  padding: 20px; /* Отступы внутри основного элемента */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Темный фон */
+    color: #ffffff; /* Белый текст */
 }
+
+/* Стиль заголовка */
+.header h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out; /* Анимация при наведении */
+}
+
+.header h1:hover {
+    transform: scale(1.05); /* Увеличение текста при наведении */
+    color: #4b4949; /* Синий цвет при наведении */
+}
+
+/* Меню навигации */
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Анимация при наведении */
+}
+
+.menu li a:hover {
+    color: #1f1f1f; /* Синий цвет при наведении */
+}
+
+ p {
+     color: #313131;
+ }
+
+.contact-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
