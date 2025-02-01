@@ -1,7 +1,7 @@
 // FairTaleList.js
 import React from "react";
 import FairTaleCard from "./FairTaleCard";
-import "./FairTaleList.css";
+import "../Styles/FairTaleList.css";
 
 const FairTaleList = () => {
   const fairyTales = [

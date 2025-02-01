@@ -3,7 +3,7 @@
 // FairyTaleCard.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./FairTaleCard.css";
+import "../Styles/FairTaleCard.css";
 const FairyTaleCard = ({ fairyTale }) => {
     return (
         <div className="fairytale-card">

@@ -1,0 +1,28 @@
+.footer {
+    background: #232323;
+    padding: 2rem;
+    margin-top: auto;
+    border-top: 2px solid #e5e5e5;
+}
+
+.footer h3 {
+    color: #646464;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #414141;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+}

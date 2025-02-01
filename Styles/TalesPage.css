@@ -1,0 +1,87 @@
+.tales-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in;
+}
+
+.tales-page h1 {
+    color: #e1e1e1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #c4c4c4;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.tales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.tale-card {
+    background: #2d2d2d;
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.tale-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(133, 133, 133, 0.2);
+}
+
+.tale-card.active {
+    border-color: #cecece;
+    background: #5b5b5b;
+}
+
+.card-content h3 {
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.card-content p {
+    color: #e0e0e0;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+.video-container {
+
+    position: relative;
+    width: 100%;
+    padding-bottom: 55%; /* 16:9 aspect ratio */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(238, 238, 238, 0.51);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

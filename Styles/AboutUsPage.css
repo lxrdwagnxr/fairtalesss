@@ -1,0 +1,144 @@
+.about-us-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in;
+}
+
+.about-us-page h1,
+.about-us-page h2 {
+    color: #d0d0d0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us-page p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-bottom: 3rem;
+}
+
+.hero-section .subtitle {
+    font-size: 1.2rem;
+    color: #fcfafa;
+}
+
+/* Team Section */
+.team-section {
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-card {
+    background: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(154, 154, 154, 0.2);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-card h3 {
+    color: #d7d7d7;
+    margin-bottom: 0.5rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+    margin-bottom: 3rem;
+}
+
+.gallery-grid {
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Join Section */
+.join-section {
+    margin-bottom: 3rem;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.join-form input,
+.join-form textarea {
+    padding: 0.8rem;
+    border: 2px solid #c4c4c4;
+    border-radius: 10px;
+    background: #2d2d2d;
+    color: #e0e0e0;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+    border-color: #bebebe;
+}
+
+.join-form button {
+    background: linear-gradient(45deg, #626262, #c2c2c2);
+    color: #1a1a1a;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.join-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(210, 210, 210, 0.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,28 @@
+/* Rating.css */
+.rating {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star.active {
+    color: #ffcc00;
+}
+
+.rating p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #4f4f4f;
+}

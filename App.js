@@ -1,13 +1,13 @@
-import "./App.css";
-import Header from "./Header";
-import FairTaleList from "./FairTaleList";
+import "./Styles/App.css";
+import Header from "./Components/Header";
+import FairTaleList from "./Components/FairTaleList";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import TalesPage from './TalesPage';
-import AboutUsPage from './AboutUsPage';
-import ContactPage from './ContactPage';
-import Footer from './Footer'
+import TalesPage from './Pages/TalesPage';
+import AboutUsPage from './Pages/AboutUsPage';
+import ContactPage from './Pages/ContactPage';
+import Footer from './Components/Footer'
 
-import FairyTaleStory from './FairyTaleStory'; // Добавили импорт компонента FairyTaleStory
+import FairyTaleStory from './Components/FairyTaleStory'; // Добавили импорт компонента FairyTaleStory
 
 function App() {
     return (
