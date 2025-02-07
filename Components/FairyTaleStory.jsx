@@ -136,9 +136,11 @@ const FairyTaleStory = () => {
                 </button>
 
             </div>
-            <Rating taleId={taleId} />
-        </div>
-    );
-};
+            <div className="rating">
+                <Rating taleId={taleId}/>
+            </div>
+            </div>
+            );
+            };
 
-export default FairyTaleStory;
+            export default FairyTaleStory;

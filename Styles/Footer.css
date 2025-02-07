@@ -26,3 +26,12 @@
     color: #666;
     font-size: 0.9rem;
 }
+.footer {
+    background: rgba(45, 45, 45, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+

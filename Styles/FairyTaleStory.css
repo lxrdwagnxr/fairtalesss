@@ -2,6 +2,7 @@
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
+
   animation: fadeIn 0.6s ease-in;
 }
 
@@ -45,4 +46,11 @@
   background: #3d3d3d;
   color: #1a1a1a;
   transform: translateY(-2px);
+}
+.fairy-tale-container h1 {
+  padding: 3px;
+  width: 20vh;
+  border-radius: 7px;
+  border: 2px solid #2f2f2f;
+  background-color: #1f1f1f;
 }

@@ -3,9 +3,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Адаптивная сетка */
   gap: 2rem; /* Расстояние между карточками */
   padding: 2rem; /* Отступы по краям */
-  background-image: url("https://images.wallpaperscraft.ru/image/single/les_derevia_temnyj_158895_3840x2160.jpg");
-  background-repeat: no-repeat;
-  background-size: cover ;
+
   animation: fadeIn 0.6s ease-in; /* Анимация появления */
   text-decoration: none;
 }
@@ -36,3 +34,12 @@
     grid-template-columns: 1fr; /* Одна колонка на очень маленьких экранах */
   }
 }
+.fair-tale-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 600px));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+

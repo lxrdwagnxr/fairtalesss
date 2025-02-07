@@ -16,7 +16,7 @@ const FairTaleList = () => {
     {
       id: 2,
       name: "Линялый фосфор",
-      description: "История рассказывает о мальчике по имени Линай", // Исправлено
+      description: "История рассказывает о мальчике по имени Линай, ", // Исправлено
       price: "300$",
       image:
         "https://i1.sndcdn.com/artworks-d3x2QXKOpM5j1RWo-FEKoaQ-t500x500.jpg", // Исправлено
@@ -24,7 +24,7 @@ const FairTaleList = () => {
     },
     {
       id: 3,
-      name: "Прокашивать монументальный",
+      name: "Прокашивать  монументальный",
       description: "Очень интересная сказка", // Исправлено
       price: "немало",
       image:
