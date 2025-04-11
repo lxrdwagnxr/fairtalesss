@@ -3,6 +3,7 @@
     padding: 2rem;
     margin-top: auto;
     border-top: 2px solid #e5e5e5;
+    justify-content: center;
 }
 
 .footer h3 {
@@ -29,9 +30,13 @@
 .footer {
     background: rgba(45, 45, 45, 0.8);
     backdrop-filter: blur(8px);
+
+
+
     padding: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;
+
     z-index: 1000;
+    border-radius: 33px;
 }
 

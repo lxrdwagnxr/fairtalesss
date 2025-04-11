@@ -1,101 +1,103 @@
-.glass-card {
-    display: flex;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    min-height: 280px;
-    max-height: 300px;
-    min-width: 333px;
-}
-
-.glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(175, 175, 175, 0.2);
-}
-
-.card-image-container {
-    flex: 0 0 50%;
+.overlay-card {
     position: relative;
+    border-radius: 15px;
     overflow: hidden;
-}
-
-.card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: fill ;
-    object-position: center;
     transition: transform 0.3s ease;
+    margin: 1rem;
+
+
 }
 
-.glass-card:hover .card-image {
-    transform: scale(1.00);
+
+.overlay-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 19px rgba(44, 44, 44, 0.98);
 }
 
-.card-content {
-    flex: 1;
-    padding: 12px;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
+.card-bg-image {
+
+    width: 563px;
+    height: 281.42999267578125px;
+    margin-bottom: -17%;
+
+
+}
+.overlay-card::after {
+
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(7, 7, 7, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
 }
 
-.card-title {
-    color: #c5c5c5;
-    margin: 0 0 1rem;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.card-content-overlay {
+    position: relative;
+    top: 87px;
+    text-align:right;
+
+
 }
 
-.card-description {
-    color: #e0e0e0;
-    line-height: 1.4;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
+.overlay-title {
+    position: relative;
+    top: -16.5rem;
+    left: -15px;
+    text-align:right;
+    font-size: 15px;
+    margin-bottom: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.card-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.overlay-description {
+    position: relative;
+    top: -15rem;
+    left: -1rem;
+    font-size: 16px;
+    line-height: 0.6rem;
+
+
 }
 
-.card-price {
-    color: #dadada;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
+.overlay-button {
+    position: relative;
+    top: -9rem;
+    left: -1.6rem;
 
-.card-button {
-    background: rgba(61, 61, 61, 0.1);
-    color: #d0d0d0;
-    padding: 15px 6px;
-    border-radius: 25px;
-    text-decoration: none;
-    border: 1px solid rgba(192, 192, 192, 0.3);
-    transition: all 0.3s ease;
-}
-
-.card-button:hover {
-    background: #e0e0e0;
+    background: rgba(192, 188, 188, 0.9);
     color: #1a1a1a;
-    box-shadow: 0 0 15px rgba(51, 51, 51, 0.3);
+    padding: 15px 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
-/* Адаптивность */
+.overlay-button:hover {
+    background: rgba(187, 187, 187, 0.9);
+    transform: scale(1.05);
+    box-shadow:
+            0 0 0 1px rgba(208, 208, 208, 0.85),     /* Тонкая обводка */
+            0 4px 12px -2px rgba(210, 210, 210, 0.4);
+}
+
+
 @media (max-width: 768px) {
-    .glass-card {
-        flex-direction: column;
+    .overlay-title {
+        font-size: 1.4rem;
     }
 
-    .card-image-container {
-        flex: 0 0 200px;
+    .overlay-description {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 2;
     }
 
-    .card-content {
-        padding: 1rem;
+    .card-content-overlay {
+        padding: 1.5rem;
+    }
+
+    .overlay-button {
+        padding: 0.6rem 1.5rem;
     }
 }
