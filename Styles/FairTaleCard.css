@@ -1,9 +1,9 @@
 .overlay-card {
     position: relative;
     border-radius: 15px;
-    overflow: hidden;
+
     transition: transform 0.3s ease;
-    margin: 1rem;
+    margin: 0.6rem 0.6rem 2rem;
 
 
 }
@@ -11,75 +11,52 @@
 
 .overlay-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 19px rgba(44, 44, 44, 0.98);
+    box-shadow: 0 5px 19px rgba(241, 4, 4, 0.98);
 }
 
-.card-bg-image {
-
-    width: 563px;
-    height: 281.42999267578125px;
-    margin-bottom: -17%;
 
 
-}
+
+
+
 .overlay-card::after {
 
+
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(7, 7, 7, 0.2);
+    box-shadow: 0 10px 20px rgb(241, 0, 0);
     opacity: 0;
     transition: opacity 0.3s ease;
 
 }
 
-.card-content-overlay {
-    position: relative;
-    top: 87px;
-    text-align:right;
 
 
-}
 
-.overlay-title {
-    position: relative;
-    top: -16.5rem;
-    left: -15px;
-    text-align:right;
-    font-size: 15px;
-    margin-bottom: 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.overlay-description {
-    position: relative;
-    top: -15rem;
-    left: -1rem;
-    font-size: 16px;
-    line-height: 0.6rem;
-
-
-}
 
 .overlay-button {
     position: relative;
-    top: -9rem;
-    left: -1.6rem;
+    top: -5.5rem;
+    left: 27.59rem;
+    background:no-repeat;
+    background: url("../Images/bttn2.svg");
 
-    background: rgba(192, 188, 188, 0.9);
-    color: #1a1a1a;
-    padding: 15px 10px;
+    padding: 12px 50px;
     border-radius: 30px;
     text-decoration: none;
-    font-weight: bold;
+
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
 
 .overlay-button:hover {
-    background: rgba(187, 187, 187, 0.9);
-    transform: scale(1.05);
+
+    transform: scale(1.2);
+}
+
+.overlay-button:hover {
     box-shadow:
             0 0 0 1px rgba(208, 208, 208, 0.85),     /* Тонкая обводка */
-            0 4px 12px -2px rgba(210, 210, 210, 0.4);
+            12px 4px 12px -2px rgba(210, 210, 210, 0.4);
 }
 
 

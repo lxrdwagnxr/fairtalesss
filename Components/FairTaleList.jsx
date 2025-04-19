@@ -2,11 +2,12 @@
 import React from "react";
 import FairTaleCard from "./FairTaleCard";
 import ded from "../Images/ded.svg";
-import Prok from "../Images/Prok.svg";
+import Prok from "../Images/fosfor2.svg";
 import  seller from "../Images/Group 161.svg";
 import bunt from "../Images/bunt.svg";
 import  hero from "../Images/hero.svg";
 import  jeje from "../Images/Group 6.svg";
+
 import "../Styles/FairTaleList.css";
 
 const FairTaleList = () => {
