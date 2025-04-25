@@ -1,64 +1,44 @@
 .overlay-card {
-    position: relative;
     border-radius: 15px;
-
-    transition: transform 0.3s ease;
-    margin: 0.6rem 0.6rem 2rem;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+    filter: url(#perfect-shadow);
 
 }
+
+
 
 
 .overlay-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 19px rgba(241, 4, 4, 0.98);
+    transform: translateY(-1px);
+    box-shadow:
+            0 8px 25px rgba(241, 4, 4, 0.4),
+            0 0 0 2px rgba(241, 4, 4, 0.3);
 }
-
-
-
-
-
-
-.overlay-card::after {
-
-
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgb(241, 0, 0);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-
-}
-
-
-
-
 
 .overlay-button {
     position: relative;
     top: -5.5rem;
     left: 27.59rem;
-    background:no-repeat;
-    background: url("../Images/bttn2.svg");
-
-    padding: 12px 50px;
+    background: url("../Images/bttn2.svg") no-repeat;
+    cursor: pointer;
+    padding: 10px 48px;
     border-radius: 30px;
     text-decoration: none;
-
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+
+
+
+
 }
 
 .overlay-button:hover {
-
     transform: scale(1.2);
-}
-
-.overlay-button:hover {
     box-shadow:
-            0 0 0 1px rgba(208, 208, 208, 0.85),     /* Тонкая обводка */
-            12px 4px 12px -2px rgba(210, 210, 210, 0.4);
+            0 0 0 1px rgba(208, 208, 208, 0.85),
+            6px 4px 15px rgba(210, 210, 210, 0.4),
+            inset 0 0 6px rgba(255, 255, 255, 0.3);
 }
-
 
 @media (max-width: 768px) {
     .overlay-title {

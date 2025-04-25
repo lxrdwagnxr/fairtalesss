@@ -1,12 +1,12 @@
 // FairTaleList.js
 import React from "react";
 import FairTaleCard from "./FairTaleCard";
-import ded from "../Images/ded.svg";
+import ded from "../Images/ded2.svg";
 import Prok from "../Images/fosfor2.svg";
-import  seller from "../Images/Group 161.svg";
-import bunt from "../Images/bunt.svg";
-import  hero from "../Images/hero.svg";
-import  jeje from "../Images/Group 6.svg";
+import  seller from "../Images/seller2.svg";
+import bunt from "../Images/bunt2.svg";
+import  hero from "../Images/hero2.svg";
+import  jeje from "../Images/teatr.svg";
 
 import "../Styles/FairTaleList.css";
 

@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TalesPage from './Pages/TalesPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import ContactPage from './Pages/ContactPage';
-import Footer from './Components/Footer'
+import Footer from './Components/Footer' ;
 
 import FairyTaleStory from './Components/FairyTaleStory'; // Добавили импорт компонента FairyTaleStory
 

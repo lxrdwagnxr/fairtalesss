@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/Header.css';
 import { Link } from 'react-router-dom';
-import HeaderImg from '../Images/Group 213.svg';
+import HeaderImg from '../Images/headerrr.svg';
 
 const Header = () => {
   return (
@@ -12,9 +12,7 @@ const Header = () => {
                   alt="Логотип сказок"
                   className="header-logo"
               />
-              <h1 className="header-title">
-                  Русские народные сказки
-              </h1>
+
           </div>
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/FairTaleCard.css';
-import button from "../Images/bttn.svg";
+
 
 const FairyTaleCard = ({ fairyTale }) => {
     return (
