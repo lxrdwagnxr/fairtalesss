@@ -1,18 +1,14 @@
-import React from 'react';
-import '../Styles/AboutUsPage.css';
+import { ReactComponent as AboutIconSvg } from '../Images/aboutusimg.svg';
+import '../Styles/AboutUsPage.css'
 
-const AboutUsPage = () => {
+const AboutIcon = () => {
     return (
-
-        <div className="about-us-page">
-            <section className="hero-section">
-                О
-                <p className="subtitle">
-
-                </p>
-            </section>
-        </div>
+        <AboutIconSvg
+            className="about-icon"
+            aria-label="О нас"
+            role="img"
+        />
     );
 };
 
-export default AboutUsPage;
+export default AboutIcon;

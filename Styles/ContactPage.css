@@ -3,7 +3,9 @@
     max-width: 1200px;
     margin: 2rem auto;
     animation: fadeIn 1s ease-in;
-    background-color: rgba(47, 47, 47, 0.52);
+    background-image: url("../Images/contact2.svg");
+    background-color: rgba(14, 14, 14, 0.25);
+
 }
 
 .contact-hero {
@@ -22,6 +24,8 @@
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+
+
 }
 
 .contact-cards {
@@ -32,7 +36,7 @@
 }
 
 .contact-card {
-    background: rgba(56, 56, 56, 0.27);
+    background: rgba(37, 37, 37, 0.99);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;

@@ -1,12 +1,7 @@
-.about-us-page {
-    padding: 2rem;
+.about-icon {
+    display: flex;
     max-width: 1213px;
     margin: 2rem auto;
-
-    background: url('../Images/Group 25.svg');
-    width: 1300px;
-    height: 1400px;
-    color: rgba(255, 255, 255, 0);
 }
 
 

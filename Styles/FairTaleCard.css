@@ -1,31 +1,38 @@
 .overlay-card {
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: auto;
     filter: url(#perfect-shadow);
-
+    margin-right: auto;
+   overflow: hidden;
+   width: 563px;
+    height: 279px;
 }
 
 
 
 
 .overlay-card:hover {
+    overflow: hidden;
     transform: translateY(-1px);
     box-shadow:
-            0 8px 25px rgba(241, 4, 4, 0.4),
-            0 0 0 2px rgba(241, 4, 4, 0.3);
+            0 8px 25px rgba(103, 103, 103, 0.4),
+            0 0 0 2px rgba(35, 35, 35, 0.44);
 }
 
-.overlay-button {
-    position: relative;
-    top: -5.5rem;
-    left: 27.59rem;
-    background: url("../Images/bttn2.svg") no-repeat;
+.overlay-button{
+
+    position: absolute;
+ top:13rem;
+    right: 23px;
+   float: right;
     cursor: pointer;
-    padding: 10px 48px;
+
     border-radius: 30px;
     text-decoration: none;
     transition: all 0.3s ease;
+
+    width: 96px;
+    height: 37px;
 
 
 
@@ -33,9 +40,10 @@
 }
 
 .overlay-button:hover {
+    margin:auto;
     transform: scale(1.2);
     box-shadow:
-            0 0 0 1px rgba(208, 208, 208, 0.85),
+            0 0 0 0.3px rgba(208, 208, 208, 0.85),
             6px 4px 15px rgba(210, 210, 210, 0.4),
             inset 0 0 6px rgba(255, 255, 255, 0.3);
 }
