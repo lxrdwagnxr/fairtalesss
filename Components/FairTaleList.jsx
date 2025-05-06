@@ -1,6 +1,13 @@
 // FairTaleList.js
 import React from "react";
 import FairTaleCard from "./FairTaleCard";
+import ded from "../Images/ded2.svg";
+import Prok from "../Images/fosfor5.svg";
+import  seller from "../Images/seller2.svg";
+import bunt from "../Images/bunt2.svg";
+import  hero from "../Images/hero2.svg";
+import  jeje from "../Images/teatr.svg";
+
 import "../Styles/FairTaleList.css";
 
 const FairTaleList = () => {
@@ -9,53 +16,52 @@ const FairTaleList = () => {
       id: 1,
       name: "Сказка о рыбаке и рыбке",
       description: "Очень интересная сказка",
-      price: "пойдет",
-      image: "https://imo10.labirint.ru/books/479633/cover.jpg/242-0",
+
+      image: ded,
       link: "./FairTale1",
     },
     {
       id: 2,
       name: "Линялый фосфор",
-      description: "История рассказывает о мальчике по имени Линай, ", // Исправлено
-      price: "300$",
-      image:
-        "https://i1.sndcdn.com/artworks-d3x2QXKOpM5j1RWo-FEKoaQ-t500x500.jpg", // Исправлено
+      description: "История рассказывает о мальчике  по имени Линай, ", // Исправлено
+
+      image: Prok , // Исправлено
       link: "/FairTale2",
     },
     {
       id: 3,
       name: "Прокашивать  монументальный",
       description: "Очень интересная сказка", // Исправлено
-      price: "немало",
-      image:
-        "https://ksmrecords.ru/upload/iblock/1cc/bg66zlfuepnzhyloejo3i2n09caurno0.jpg", // Исправлено
+
+
+      image: hero, // Исправлено
       link: "/FairTale3",
     },
     {
       id: 4,
       name: "Разровнять Снедь ",
       description: "Очень интересная сказка", // Исправлено
-      price: "немало",
+
       image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAFvJt9Jwbcmr8N5N38CkHSvpm1HNBUqa6Q&s", // Исправлено
+          bunt, // Исправлено
       link: "/FairTale3",
     },
     {
       id: 5,
       name: "Исподволь Меняться",
       description: "Очень интересная сказка", // Исправлено
-      price: "немало",
+
       image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-r6G9a-oKllbODlXtOUO7v-l_xHegSkVM5A&s", // Исправлено
+          seller, // Исправлено
       link: "/FairTale3",
     },
     {
       id: 6,
       name: "Наслать Укатиться",
       description: "Очень интересная сказка", // Исправлено
-      price: "немало",
-      image:
-          "https://upload.wikimedia.org/wikipedia/ru/thumb/4/4a/Kish_prodavec_koshmarov.jpg/800px-Kish_prodavec_koshmarov.jpg", // Исправлено
+
+      image: jeje
+          , // Исправлено
       link: "/FairTale3",
     },
 

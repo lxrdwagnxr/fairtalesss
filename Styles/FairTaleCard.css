@@ -1,101 +1,68 @@
-.glass-card {
-    display: flex;
-    background: rgba(255, 255, 255, 0.05);
+.overlay-card {
     border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: url(#perfect-shadow);
+    margin-right: auto;
+   overflow: hidden;
+   width: 563px;
+    height: 279px;
+}
+
+
+
+
+.overlay-card:hover {
     overflow: hidden;
-    transition: all 0.3s ease;
-    min-height: 280px;
-    max-height: 300px;
-    min-width: 333px;
+    transform: translateY(-1px);
+    box-shadow:
+            0 8px 25px rgba(103, 103, 103, 0.4),
+            0 0 0 2px rgba(35, 35, 35, 0.44);
 }
 
-.glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(175, 175, 175, 0.2);
-}
+.overlay-button{
 
-.card-image-container {
-    flex: 0 0 50%;
-    position: relative;
-    overflow: hidden;
-}
+    position: absolute;
+ top:13rem;
+    right: 23px;
+   float: right;
+    cursor: pointer;
 
-.card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: fill ;
-    object-position: center;
-    transition: transform 0.3s ease;
-}
-
-.glass-card:hover .card-image {
-    transform: scale(1.00);
-}
-
-.card-content {
-    flex: 1;
-    padding: 12px;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card-title {
-    color: #c5c5c5;
-    margin: 0 0 1rem;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.card-description {
-    color: #e0e0e0;
-    line-height: 1.4;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-}
-
-.card-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card-price {
-    color: #dadada;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.card-button {
-    background: rgba(61, 61, 61, 0.1);
-    color: #d0d0d0;
-    padding: 15px 6px;
-    border-radius: 25px;
+    border-radius: 30px;
     text-decoration: none;
-    border: 1px solid rgba(192, 192, 192, 0.3);
     transition: all 0.3s ease;
+
+    width: 96px;
+    height: 37px;
+
+
+
+
 }
 
-.card-button:hover {
-    background: #e0e0e0;
-    color: #1a1a1a;
-    box-shadow: 0 0 15px rgba(51, 51, 51, 0.3);
+.overlay-button:hover {
+    margin:auto;
+    transform: scale(1.2);
+    box-shadow:
+            0 0 0 0.3px rgba(208, 208, 208, 0.85),
+            6px 4px 15px rgba(210, 210, 210, 0.4),
+            inset 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
-    .glass-card {
-        flex-direction: column;
+    .overlay-title {
+        font-size: 1.4rem;
     }
 
-    .card-image-container {
-        flex: 0 0 200px;
+    .overlay-description {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 2;
     }
 
-    .card-content {
-        padding: 1rem;
+    .card-content-overlay {
+        padding: 1.5rem;
+    }
+
+    .overlay-button {
+        padding: 0.6rem 1.5rem;
     }
 }

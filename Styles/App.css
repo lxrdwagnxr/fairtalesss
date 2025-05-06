@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://images.wallpaperscraft.ru/image/single/les_derevia_temnyj_158895_3840x2160.jpg');
+    background-image: url('../Images/bg.svg');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;

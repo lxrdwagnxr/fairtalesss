@@ -1,9 +1,12 @@
 .fairy-tale-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 2rem;
-
+ background-image: url("../Images/Rectangle 40.svg");
   animation: fadeIn 0.6s ease-in;
+  background-color: rgba(14, 14, 14, 0.42);
+  border-radius: 16px;
+  width: 1000px;
 }
 
 .fairy-tale-text-box {
